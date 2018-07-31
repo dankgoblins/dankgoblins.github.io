@@ -2,14 +2,40 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>title</title>
-  <style type="text/css">
-    body{background: pink}
-    h1{color:blue}
-  </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Game of Bros</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing" rel="stylesheet">
+    <style type="text/css">
+      body{text-align:center;overflow: hidden;}
+      .ele{width: 80vw; margin: 0 auto;opacity: 0.75;}
+      @media (min-width: 1000px){
+        .ele{width: 36vw}
+      }
+      h1{font-family: 'Varela Round', sans-serif;font-weight: 400;font-size: 2.1em;}
+      img{margin: 0 auto;}
+      .pe{font-family: 'Caesar Dressing', cursive;font-size: 1.2em;opacity: 0.92;}
+      .red_link{font-family: 'Caesar Dressing', cursive;color: #888;text-decoration: none;font-size: 0.8em; transition: all 0.4s ease-in}
+      .red_image{height:1em; opacity: 0.4;}
+      .red_link:hover,.red_image:hover{color: #333;opacity: 0.75;}
+    </style>
+    <script type="text/javascript">
+      function redirect(){
+        window.location="http://gameofbros.club/pubgm";
+        console.log("working...");
+        return false;
+      }
+      setTimeout('redirect()', 5000);
+    </script>
   </head>
   <body>
-    <h1>Test page</h1>
+    <div class="ele">
+      <img src="main.gif">
+        <h1>Hey there!</h1>
+        <p class="pe">We are working on this, please come back later :3</p>
+        <a href="http://gameofbros.club/pubgm" class="red_link">
+          <p class="red_text">Redirecting <img src="loader.gif" class="red_image"></p>
+        </a>
+    </div>
   </body>
 </html>
