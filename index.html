@@ -9,15 +9,22 @@
     <style type="text/css">
       body{text-align:center;overflow: hidden;}
       .ele{width: 80vw; margin: 0 auto;opacity: 0.75;}
-      @media (min-width: 1000px){
-        .ele{width: 36vw}
-      }
       h1{font-family: 'Varela Round', sans-serif;font-weight: 400;font-size: 2.1em;}
-      img{margin: 0 auto;}
+      .ele > img:nth-child(1n){margin: 0 auto;height: 320px;width: 320px;}
       .pe{font-family: 'Caesar Dressing', cursive;font-size: 1.2em;opacity: 0.92;}
       .red_link{font-family: 'Caesar Dressing', cursive;color: #888;text-decoration: none;font-size: 0.8em; transition: all 0.4s ease-in}
       .red_image{height:1em; opacity: 0.4;}
       .red_link:hover,.red_image:hover{color: #333;opacity: 0.75;}
+      @media (min-width: 1200px){
+        .ele{width: 36vw}
+      }
+      @media (max-height: 540px){
+         .ele > img:nth-child(1n){margin-top: -20% !important;}
+         .ele h1,.ele p{transform: scale(0.85);line-height: 24px}
+         .ele h1{line-height: 14px;}
+         .ele a{font-size: initial;}
+         .ele {width: 100vw;}
+      }
     </style>
     <script type="text/javascript">
       function redirect(){
@@ -25,17 +32,17 @@
         console.log("working...");
         return false;
       }
-      setTimeout('redirect()', 5000);
+      // setTimeout('redirect()', 5000;
     </script>
   </head>
   <body>
     <div class="ele">
       <img src="main.gif">
-        <h1>Hey there!</h1>
-        <p class="pe">We are working on this, please come back later :3</p>
-        <a href="http://gameofbros.club/pubgm" class="red_link">
-          <p class="red_text">Redirecting <img src="loader.gif" class="red_image"></p>
-        </a>
+      <h1>Hey there!</h1>
+      <p class="pe">We are working on this, please come back later :3</p>
+      <a href="http://gameofbros.club/pubgm" class="red_link">
+        <p class="red_text">Redirecting <img src="loader.gif" class="red_image"></p>
+      </a>
     </div>
   </body>
 </html>
